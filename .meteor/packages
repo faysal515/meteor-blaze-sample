@@ -23,7 +23,7 @@ shell-server@0.2.1            # Server-side component of the `meteor shell` comm
 
 twbs:bootstrap
 fortawesome:fontawesome
-kadira:flow-router
+#kadira:flow-router
 alanning:roles
 accounts-facebook@1.0.11
 accounts-google@1.0.11

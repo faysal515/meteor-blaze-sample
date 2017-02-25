@@ -15,6 +15,7 @@ Template.list.helpers({
   },
   creatorName: function () {
     //console.log('... ', this.createdBy )
-    return Meteor.users.findOne({_id: this.createdBy}).profile.name
+    let user = Meteor.users.findOne({_id: this.createdBy})
+    return user ? user.profile.name : 'unknown'
   }
 })
