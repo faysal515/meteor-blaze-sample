@@ -20,8 +20,7 @@ Meteor.startup(() => {
         type: 'Point',
         coordinates: [50,50]
       },
-      createdAt: new Date(),
-      createdBy: 'seed'
+      createdAt: new Date()
     }
 
     Rooms.insert(obj)

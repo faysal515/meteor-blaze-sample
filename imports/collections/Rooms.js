@@ -76,13 +76,14 @@ export const Room  = new SimpleSchema({
     type: Date
   },
   createdBy: {
-    type: String
+    type: String,
+    optional: true
   }
 });
 
 Rooms.before.insert(function (userId, doc) {
   doc.createdAt = new Date()
-  doc.createdBy = Meteor.userId()
+  doc.createdBy = this.userId
   doc.status = 'Active'
 });
 
