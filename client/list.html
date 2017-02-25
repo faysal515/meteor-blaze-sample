@@ -1,0 +1,15 @@
+<template name="list">
+    <section id="room-list">
+        <legend>Room List</legend>
+        <div class="row">
+            {{#each rooms}}
+                <div class="col-md-5 col-sm-12 custom">
+                    <div><img src="https://a0.muscache.com/im/pictures/94139818/b5c88637_original.jpg?aki_policy=x_medium" class="img-responsive-height"></div>
+                    <span class="text-primary">{{title}} from {{creatorName}}</span>
+                </div>
+            {{/each}}
+
+        </div>
+    </section>
+
+</template>
